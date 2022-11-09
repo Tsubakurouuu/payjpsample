@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 2022_11_08_032204) do
 
   create_table "cards", force: :cascade do |t|
-    t.string "customer_id", null: false
-    t.string "token_id", null: false
+    t.string "customer_id"
+    t.string "token_id"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
